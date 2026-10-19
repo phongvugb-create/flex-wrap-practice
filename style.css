@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 25px;
+}
+
+h1 {
+    color: #263b5e;
+    margin-bottom: 10px;
+}
+
+body > p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+
+    /* Thử: nowrap, wrap, wrap-reverse, initial */
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: white;
+    align-content: flex-start;
+}
+
+.item {
+    flex: 0 0 180px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    font-weight: bold;
+}
